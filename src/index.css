@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #26272b;
+  color: #f4f4f4;
+  position: relative; /* Add this line to make pseudo-elements relative to body */
+}
+
+a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+body::before, body::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: radial-gradient(white 2px, transparent 0px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none; /* Prevents pseudo-elements from interfering with content */
+}
+
+body::before {
+  animation: stars 10s infinite; /* Add animation for twinkling effect */
+}
+
+@keyframes stars {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100px, -100px); /* Adjust the values for random placement */
+    opacity: 0;
+  }
+}
+
