@@ -1,7 +1,7 @@
 # Do this steps in order to run it yourself
 
 * run npm install
-* make sure to replace the key value in App.js with your own API key from "https://api.nasa.gov/".
+* make sure to replace the key value in App.js and in AsteroidDetails.js with your own API key from "https://api.nasa.gov/".
 
 ## Available Scripts
 
