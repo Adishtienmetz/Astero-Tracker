@@ -8,7 +8,7 @@ import Tomorrow from "./routes/Tomorrow";
 
 function App() {
 
-  const key = 'fZb00VFq7FbGgvz1cqmrmnBrHlEgkJtiNaySlcGg';
+  const key = 'insert api key here';
   const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=&end_date=&api_key=${key}`
   const [asteroids, setAsteroids] = useState([]);
 
