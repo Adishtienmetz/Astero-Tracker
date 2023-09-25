@@ -5,7 +5,7 @@ import './AsteroidDetails.css'
 
 const AsteroidDetails = () => {
 
-  const key = 'fZb00VFq7FbGgvz1cqmrmnBrHlEgkJtiNaySlcGg';
+  const key = 'insert api key here';
   const params = useParams();
   const url = `https://api.nasa.gov/neo/rest/v1/neo/${params.asteroidId}?api_key=${key}`
   console.log(url);
